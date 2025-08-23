@@ -4,9 +4,9 @@ import { NavItem } from '../../types';
 import './Header.css';
 
 const navItems: NavItem[] = [
-  { id: 'inicio', label: 'Inicio', href: 'hero' },
-  { id: 'mision', label: 'Misión', href: 'mission' },
-  { id: 'actividades', label: 'Actividades', href: 'activities' },
+  { id: 'inicio', label: 'Inicio', href: 'inicio' },
+  { id: 'mision', label: 'Misión', href: 'mision' },
+  { id: 'proyectos', label: 'Proyectos', href: 'proyectos' },
   // { id: 'contacto', label: 'Contacto', href: 'contact' },
 ];
 
