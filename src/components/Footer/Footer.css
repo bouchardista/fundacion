@@ -1,0 +1,27 @@
+.footer {
+  padding: var(--spacing-xl) 0;
+  background-color: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__content {
+  text-align: center;
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.875rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .footer {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .footer__copyright {
+    font-size: 1rem;
+  }
+}

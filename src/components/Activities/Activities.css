@@ -1,0 +1,219 @@
+.activities {
+  padding: var(--spacing-2xl) 0;
+  background-color: transparent;
+}
+
+.activities__header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.activities__title {
+  color: white;
+  margin-bottom: var(--spacing-md);
+}
+
+.activities__subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Grid de proyectos */
+.activities__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+  align-items: stretch;
+}
+
+.activities__card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.activities__card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.activities__card-image {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activities__card-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.activities__card-placeholder svg {
+  width: 60px;
+  height: 60px;
+}
+
+.activities__card-category {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--primary-color);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.activities__card-content {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+}
+
+.activities__card-title {
+  color: white;
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.25rem;
+  height: 60px;
+  display: flex;
+  align-items: start;
+  line-height: 1.2;
+}
+
+.activities__card-description {
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+  flex: 1;
+  min-height: 80px;
+}
+
+.activities__card-stats {
+  display: flex;
+  gap: var(--spacing-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: var(--spacing-md);
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+.activities__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+}
+
+.activities__stat-number {
+  color: #fbbf24;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+}
+
+.activities__stat-label {
+  color: white;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+/* CTA Section */
+.activities__cta {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: var(--spacing-2xl);
+  border-radius: var(--border-radius-lg);
+  margin-top: var(--spacing-2xl);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.activities__cta-title {
+  color: white;
+  margin-bottom: var(--spacing-md);
+  font-size: 1.75rem;
+}
+
+.activities__cta-text {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.125rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.activities__cta-button {
+  font-size: 1.125rem;
+  padding: var(--spacing-md) var(--spacing-xl);
+  background-color: var(--accent-color) !important;
+  color: white !important;
+  border: 2px solid var(--accent-color) !important;
+  font-weight: 600;
+}
+
+.activities__cta-button:hover {
+  background-color: var(--accent-hover) !important;
+  border-color: var(--accent-hover) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .activities__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+  }
+  
+  .activities__card-image {
+    height: 220px;
+  }
+  
+  .activities__card-content {
+    padding: var(--spacing-xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  .activities__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-2xl);
+  }
+  
+  .activities__card-title {
+    font-size: 1.5rem;
+  }
+  
+  .activities__cta-title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .activities__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-2xl);
+  }
+}
