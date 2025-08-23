@@ -3,7 +3,7 @@ import './Mission.css';
 
 const Mission: React.FC = () => {
   return (
-    <section id="mission" className="mission">
+    <section id="mision" className="mission">
       <div className="container">
         <div className="mission__header">
           <h2 className="mission__title">Nuestra Misión</h2>

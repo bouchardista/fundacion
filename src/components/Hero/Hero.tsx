@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section id="hero" className="hero">
+    <section id="inicio" className="hero">
       <div className="container">
         <div className="hero__content">
           <div className="hero__text">
