@@ -5,6 +5,7 @@ import './Header.css';
 
 const navItems: NavItem[] = [
   { id: 'inicio', label: 'Inicio', href: 'inicio' },
+  { id: 'nosotros', label: 'Nosotros', href: 'vision-mission' },
   { id: 'objetivos', label: 'Objetivos', href: 'mision' },
   // { id: 'contacto', label: 'Contacto', href: 'contact' },
 ];
@@ -101,7 +102,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Menú Móvil */}
-        <div className={`header__mobile-menu ${isMenuOpen ? 'header__mobile-menu--open' : ''}`}>
+        <div className={`header__mobile-menu ${isMenuOpen ? 'header__mobile-menu--open' : ''} ${isScrolled ? 'header__mobile-menu--scrolled' : ''}`}>
           <nav className="header__mobile-nav">
             <ul className="header__mobile-nav-list">
               {navItems.map((item) => (

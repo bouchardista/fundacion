@@ -5,11 +5,6 @@ const Mission: React.FC = () => {
   return (
     <section id="mision" className="mission">
       <div className="container">
-        
-        <div className="mission__content">
-          
-        </div>
-        
         <div className="mission__values">
           <h3 className="mission__values-title">Nuestros Objetivos</h3>
           <div className="mission__values-grid">

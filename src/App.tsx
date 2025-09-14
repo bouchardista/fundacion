@@ -1,5 +1,6 @@
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import VisionMission from './components/VisionMission/VisionMission';
 import Goals from './components/Mission/Mission';
 import Donations from './components/Donations/Donations';
 import Activities from './components/Activities/Activities';
@@ -11,6 +12,10 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
+      <br/>
+      
+      <br/>
+      <VisionMission />
       <Goals />
       <br/>
       <br/>

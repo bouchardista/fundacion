@@ -33,7 +33,7 @@ const Activities: React.FC = () => {
       <div className="container">
         
         <div className="activities__cta">
-          <h3 className="activities__cta-title">Apoyo a la Fundación</h3>
+          <h3 className="activities__cta-title">Apoyá la Causa</h3>
           <p className="activities__cta-text">
             Tu contribución nos ayuda a seguir trabajando por una Córdoba más libre y próspera
           </p>
@@ -43,7 +43,7 @@ const Activities: React.FC = () => {
             duration={150}
             className="btn btn-primary activities__cta-button"
           >
-            Hacer una Donación
+            Quiero Donar
           </Link>
         </div>
       </div>

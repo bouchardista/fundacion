@@ -16,6 +16,11 @@
   box-shadow: var(--shadow-md);
 }
 
+.header__mobile-menu--scrolled {
+  background: #1e1b4b !important;
+}
+
+
 .header__content {
   display: flex;
   align-items: center;
@@ -148,9 +153,9 @@
   left: 0;
   right: 0;
   background: #0f0f23;
+  transition: background-color var(--transition-normal), opacity var(--transition-normal), visibility var(--transition-normal);
   opacity: 0;
   transform: translateY(0);
-  transition: opacity var(--transition-normal), visibility var(--transition-normal);
   z-index: 500;
   visibility: hidden;
   padding: var(--spacing-2xl) 0;
