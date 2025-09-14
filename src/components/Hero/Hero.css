@@ -46,9 +46,9 @@
 }
 
 .hero__content {
-  text-align: center;
+  text-align: left;
   color: white;
-  max-width: 900px;
+  max-width: 1200px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -58,13 +58,37 @@
   min-height: 80vh;
 }
 
+.hero__title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-lg);
+  width: 100%;
+}
+
+.hero__logo-image {
+  height: 200px;
+  width: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  transition: transform var(--transition-normal);
+}
+
+.hero__logo-image:hover {
+  transform: scale(1.05);
+}
+
 .hero__title {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.1;
-  margin-bottom: var(--spacing-xl);
+  margin: 0;
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .hero__title-highlight {
@@ -86,8 +110,6 @@
   margin-bottom: var(--spacing-2xl);
   color: rgba(255, 255, 255, 0.95);
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -158,9 +180,20 @@
 
 /* Responsive */
 @media (min-width: 768px) {
+  .hero__logo-image {
+    height: 250px;
+  }
+  
+  .hero__title-container {
+    gap: var(--spacing-md);
+    align-items: center;
+    justify-content: center;
+  }
+  
   .hero__title {
     font-size: 3.5rem;
-    text-align: center;
+    text-align: left;
+    align-items: flex-start;
   }
   
   .hero__subtitle {
@@ -177,9 +210,20 @@
 }
 
 @media (min-width: 1024px) {
+  .hero__logo-image {
+    height: 300px;
+  }
+  
+  .hero__title-container {
+    gap: var(--spacing-lg);
+    align-items: center;
+    justify-content: center;
+  }
+  
   .hero__title {
     font-size: 4rem;
-    text-align: center;
+    text-align: left;
+    align-items: flex-start;
   }
   
   .hero__content {
@@ -202,6 +246,28 @@
 @media (max-width: 767px) {
   .hero__content {
     padding: 0 var(--spacing-sm);
+    gap: var(--spacing-lg);
+  }
+  
+  .hero__logo-image {
+    height: 220px;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .hero__title-container {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    align-items: center;
+  }
+  
+  .hero__title {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .hero__subtitle {
+    margin-top: var(--spacing-sm);
   }
   
   .hero__cta {

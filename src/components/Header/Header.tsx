@@ -39,7 +39,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="header__logo">
             <Link to="hero" smooth={true} duration={500} onClick={closeMenu}>
-              <span className="header__logo-text">Fundación</span>
+              <span className="header__logo-text">Fundación Córdoba Avanza</span>
             </Link>
           </div>
 
@@ -71,6 +71,19 @@ const Header: React.FC = () => {
               smooth={true}
               duration={500}
               className="btn btn-accent"
+              style={{
+                background: '#8B5F9F',
+                backgroundColor: '#8B5F9F',
+                color: '#ffffff',
+                border: '1px solid #8B5F9F',
+                opacity: 1,
+                textDecoration: 'none',
+                display: 'inline-block',
+                fontWeight: 600,
+                borderRadius: '6px',
+                cursor: 'pointer',
+                boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)'
+              }}
             >
               Quiero Donar
             </Link>
@@ -112,6 +125,21 @@ const Header: React.FC = () => {
                   duration={500}
                   className="btn btn-accent header__mobile-cta"
                   onClick={closeMenu}
+                  style={{
+                    background: '#8B5F9F',
+                    backgroundColor: '#8B5F9F',
+                    color: '#ffffff',
+                    border: '1px solid #8B5F9F',
+                    opacity: 1,
+                    textDecoration: 'none',
+                    display: 'inline-block',
+                    fontWeight: 600,
+                    borderRadius: '6px',
+                    cursor: 'pointer',
+                    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.3)',
+                    padding: '8px 16px',
+                    fontSize: '0.875rem'
+                  }}
                 >
                   Quiero Donar
                 </Link>

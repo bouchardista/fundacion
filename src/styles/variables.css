@@ -1,20 +1,20 @@
 :root {
-  /* Paleta de colores morada/violeta - más oscura */
-  --primary-color: #4c1d95;
-  --primary-hover: #5b21b6;
-  --primary-light: #6366f1;
-  --primary-dark: #312e81;
-  --secondary-color: #5b21b6;
-  --secondary-hover: #4c1d95;
-  --accent-color: #7c3aed;
-  --accent-hover: #8b5cf6;
-  --accent-light: #a78bfa;
-  --text-color: #1e1b4b;
-  --text-light: #6b7280;
+  /* Paleta de colores violeta de marca #50276F */
+  --primary-color: #50276F;
+  --primary-hover: #6B3A8A;
+  --primary-light: #8B5F9F;
+  --primary-dark: #3D1F56;
+  --secondary-color: #6B3A8A;
+  --secondary-hover: #50276F;
+  --accent-color: #8B5F9F;
+  --accent-hover: #A67BB8;
+  --accent-light: #B895C7;
+  --text-color: #2D1B3D;
+  --text-light: #6B5B73;
   --background-color: #ffffff;
   --background-light: #f8fafc;
   --background-dark: #f1f5f9;
-  --border-color: #e2e8f0;
+  --border-color: #D4C5D9;
   --success-color: #10b981;
   --error-color: #ef4444;
   

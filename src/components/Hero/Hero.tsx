@@ -20,10 +20,18 @@ const Hero: React.FC = () => {
       <div className="container">
         <div className="hero__content">
           <div className="hero__text">
-            <h1 className="hero__title">
-              Transformando a través <br/>de la
-              <span className="hero__title-highlight"> libertad</span>
-            </h1>
+            <div className="hero__title-container">
+              <img 
+                src="/logo-fundacion-lla.png" 
+                alt="Fundación Córdoba Avanza" 
+                className="hero__logo-image"
+              />
+              <h1 className="hero__title">
+                Transformando <br/>
+                a través de la <br/>
+                <span className="hero__title-highlight">libertad</span>
+              </h1>
+            </div>
             
             <p className="hero__subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 

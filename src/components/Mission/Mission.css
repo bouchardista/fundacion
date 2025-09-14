@@ -135,12 +135,23 @@
   }
   
   .mission__values-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-xl);
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
   }
   
   .mission__card {
     padding: var(--spacing-2xl);
+  }
+  
+  .mission__value {
+    padding: var(--spacing-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .mission__values-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
   }
   
   .mission__value {
