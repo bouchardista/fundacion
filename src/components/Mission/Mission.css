@@ -149,6 +149,43 @@
   }
 }
 
+@media (max-width: 767px) {
+  .mission {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .mission__values-title {
+    font-size: 1.75rem;
+    margin-top: -1rem;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .mission__values-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: 0 var(--spacing-md);
+  }
+  
+  .mission__value {
+    padding: var(--spacing-md);
+  }
+  
+  .mission__value h4 {
+    font-size: 1.125rem;
+  }
+  
+  .mission__value p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mission__values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+}
+
 @media (min-width: 1024px) {
   .mission__values-grid {
     grid-template-columns: repeat(3, 1fr);

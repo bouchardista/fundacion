@@ -60,12 +60,6 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-      
-      {/* Scroll indicator */}
-      <div className={`hero__scroll-indicator ${isScrolled ? 'hero__scroll-indicator--hidden' : ''}`}>
-        <div className="hero__scroll-arrow"></div>
-        <span className="hero__scroll-text">Desliza para explorar</span>
-      </div>
     </section>
   );
 };

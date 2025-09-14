@@ -62,20 +62,33 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .vision-mission {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .vision-mission__title {
+    font-size: 1.75rem;
+    margin-top: -1.5rem;
+    margin-bottom: var(--spacing-lg);
+  }
+  
   .vision-mission__content {
-    gap: var(--spacing-xl);
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
     padding: 0 var(--spacing-md);
+    max-width: 100%;
   }
   
   .vision-mission__card {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
+    max-width: 100%;
   }
   
   .vision-mission__card h3 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
   
   .vision-mission__card p {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
   }
 }

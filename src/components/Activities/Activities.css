@@ -206,6 +206,73 @@
   }
 }
 
+@media (max-width: 767px) {
+  .activities {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .activities__title {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .activities__subtitle {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .activities__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: 0 var(--spacing-md);
+  }
+  
+  .activities__card {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .activities__card-image {
+    height: 200px;
+  }
+  
+  .activities__card-content {
+    padding: var(--spacing-md);
+  }
+  
+  .activities__card-title {
+    font-size: 1.25rem;
+  }
+  
+  .activities__card-description {
+    font-size: 0.875rem;
+  }
+  
+  .activities__cta {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+  
+  .activities__cta-title {
+    font-size: 1.5rem;
+  }
+  
+  .activities__cta-text {
+    font-size: 1rem;
+  }
+  
+  .activities__cta-button {
+    padding: var(--spacing-md) var(--spacing-lg);
+    min-height: 48px;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .activities__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+}
+
 @media (min-width: 1024px) {
   .activities__grid {
     grid-template-columns: repeat(3, 1fr);
