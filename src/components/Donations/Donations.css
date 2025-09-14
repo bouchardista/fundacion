@@ -1,6 +1,9 @@
 .donations {
-  padding: var(--spacing-2xl) 0;
+  padding: 6rem 0;
   background: transparent;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .donations__header {
@@ -178,7 +181,9 @@
 
 @media (max-width: 767px) {
   .donations {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-2xl) 0;
+    min-height: auto;
+    display: block;
   }
   
   .donations__title {
