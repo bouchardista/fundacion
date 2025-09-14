@@ -5,7 +5,6 @@ import './Header.css';
 
 const navItems: NavItem[] = [
   { id: 'inicio', label: 'Inicio', href: 'inicio' },
-  { id: 'mision', label: 'Nosotros', href: 'mision' },
   { id: 'objetivos', label: 'Objetivos', href: 'mision' },
   // { id: 'contacto', label: 'Contacto', href: 'contact' },
 ];

@@ -1,5 +1,5 @@
 .mission {
-  padding: var(--spacing-2xl) 0;
+  padding: 0;
   background-color: transparent;
 }
 
@@ -83,6 +83,7 @@
 
 .mission__values-title {
   color: white;
+  margin-top: -20px;
   margin-bottom: var(--spacing-xl);
   font-size: 2rem;
 }

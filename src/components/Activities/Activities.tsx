@@ -6,24 +6,24 @@ import './Activities.css';
 const projects: Project[] = [
   {
     id: '1',
-    title: 'Programa de Educación Digital',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    title: 'Formación Política y Ciudadana',
+    description: 'Desarrollamos programas de capacitación para ciudadanos comprometidos con los valores del liberalismo y el ideario de La Libertad Avanza.',
     image: '/images/education.jpg',
     category: 'Educación'
   },
   {
     id: '2',
-    title: 'Talleres de Empleabilidad',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    title: 'Investigación y Análisis Estadístico',
+    description: 'Relevamos, analizamos y difundimos datos de interés público que sirven como base para la formulación de políticas públicas efectivas.',
     image: '/images/workshop.jpg',
-    category: 'Empleo'
+    category: 'Investigación'
   },
   {
     id: '3',
-    title: 'Apoyo a Microemprendimientos',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    title: 'Asesoramiento Técnico y Profesional',
+    description: 'Brindamos asistencia técnica a instituciones, dirigentes y ciudadanos interesados en construir una sociedad más libre y eficiente.',
     image: '/images/business.jpg',
-    category: 'Emprendimiento'
+    category: 'Asesoramiento'
   },
 ];
 
@@ -31,17 +31,11 @@ const Activities: React.FC = () => {
   return (
     <section id="objetivos" className="activities">
       <div className="container">
-        <div className="activities__header">
-          <h2 className="activities__title">Apoyo a la Fundación</h2>
-          <p className="activities__subtitle">
-            Tu contribución nos ayuda a seguir trabajando por una Córdoba más libre y próspera
-          </p>
-        </div>
         
         <div className="activities__cta">
-          <h3 className="activities__cta-title">¿Querés apoyar nuestros proyectos?</h3>
+          <h3 className="activities__cta-title">Apoyo a la Fundación</h3>
           <p className="activities__cta-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Tu contribución nos ayuda a seguir trabajando por una Córdoba más libre y próspera
           </p>
           <Link
             to="donations"

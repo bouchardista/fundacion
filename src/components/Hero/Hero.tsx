@@ -34,9 +34,8 @@ const Hero: React.FC = () => {
             </div>
             
             <p className="hero__subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              La Fundación Córdoba Avanza es una organización sin fines de lucro con sede en la ciudad de Córdoba, 
+              nacida en el seno del pensamiento y los valores del partido La Libertad Avanza.
             </p>
             
             <div className="hero__cta">
