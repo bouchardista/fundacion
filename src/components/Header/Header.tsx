@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { NavItem } from '../../types';
+import type { NavItem } from '../../types';
 import './Header.css';
 
 const navItems: NavItem[] = [
   { id: 'inicio', label: 'Inicio', href: 'inicio' },
-  { id: 'mision', label: 'Misión', href: 'mision' },
-  { id: 'proyectos', label: 'Proyectos', href: 'proyectos' },
+  { id: 'mision', label: 'Nosotros', href: 'mision' },
+  { id: 'objetivos', label: 'Objetivos', href: 'mision' },
   // { id: 'contacto', label: 'Contacto', href: 'contact' },
 ];
 

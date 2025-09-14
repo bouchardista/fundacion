@@ -29,46 +29,13 @@ const projects: Project[] = [
 
 const Activities: React.FC = () => {
   return (
-    <section id="proyectos" className="activities">
+    <section id="objetivos" className="activities">
       <div className="container">
         <div className="activities__header">
-          <h2 className="activities__title">Nuestros Proyectos</h2>
+          <h2 className="activities__title">Apoyo a la Fundación</h2>
           <p className="activities__subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            Tu contribución nos ayuda a seguir trabajando por una Córdoba más libre y próspera
           </p>
-        </div>
-        
-        <div className="activities__grid">
-          {projects.map((project) => (
-            <div key={project.id} className="activities__card">
-              <div className="activities__card-image">
-                <div className="activities__card-placeholder">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                    <circle cx="8.5" cy="8.5" r="1.5"/>
-                    <polyline points="21,15 16,10 5,21"/>
-                  </svg>
-                </div>
-                <div className="activities__card-category">{project.category}</div>
-              </div>
-              
-              <div className="activities__card-content">
-                <h3 className="activities__card-title">{project.title}</h3>
-                <p className="activities__card-description">{project.description}</p>
-                
-                <div className="activities__card-stats">
-                  <div className="activities__stat">
-                    <span className="activities__stat-number">150+</span>
-                    <span className="activities__stat-label">Beneficiarios</span>
-                  </div>
-                  <div className="activities__stat">
-                    <span className="activities__stat-number">12</span>
-                    <span className="activities__stat-label">Meses</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
         
         <div className="activities__cta">

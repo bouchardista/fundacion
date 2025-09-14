@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="container">
         <div className="footer__content">
           <p className="footer__copyright">
-            © 2025 Alianza La Libertad Avanza Córdoba. Todos los derechos reservados.
+            © 2025 Fundación Córdoba Avanza. Todos los derechos reservados.
           </p>
         </div>
       </div>

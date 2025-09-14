@@ -51,14 +51,14 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: var(--spacing-md);
+  gap: 8px;
 }
 
 .header__nav-link {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  padding: var(--spacing-xs) var(--spacing-sm);
+  padding: var(--spacing-xs) 6px;
   border-radius: var(--border-radius-sm);
   transition: all var(--transition-fast);
   position: relative;
@@ -282,5 +282,24 @@ header .header__mobile-cta a {
   
   .header__mobile-menu {
     display: none;
+  }
+}
+
+/* Pantallas muy grandes */
+@media (min-width: 1200px) {
+  .header__nav-list {
+    gap: 16px;
+  }
+  
+  .header__nav-link {
+    padding: var(--spacing-xs) 12px;
+  }
+  
+  .header__logo {
+    padding-left: var(--spacing-2xl);
+  }
+  
+  .header__cta {
+    padding-right: var(--spacing-2xl);
   }
 }
