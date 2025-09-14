@@ -1,19 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-scroll';
 import './Hero.css';
 
 const Hero: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <section id="inicio" className="hero">
@@ -49,9 +38,10 @@ const Hero: React.FC = () => {
               </Link>
               
               <Link
-                to="mission"
+                to="mision"
                 smooth={true}
                 duration={150}
+                offset={-100}
                 className="btn btn-secondary hero__cta-secondary"
               >
                 Conocer Más

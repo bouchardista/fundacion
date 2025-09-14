@@ -55,7 +55,7 @@ const Header: React.FC = () => {
                     className="header__nav-link"
                     activeClass="header__nav-link--active"
                     spy={true}
-                    offset={-80}
+                    offset={-100}
                   >
                     {item.label}
                   </Link>
