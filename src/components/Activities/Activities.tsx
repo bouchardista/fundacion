@@ -35,7 +35,7 @@ const Activities: React.FC = () => {
         <div className="activities__cta">
           <h3 className="activities__cta-title">Apoyá la Causa</h3>
           <p className="activities__cta-text">
-            Tu contribución nos ayuda a seguir trabajando por una Córdoba más libre y próspera
+            Tu contribución nos ayuda a seguir trabajando<br />por una Córdoba más libre y próspera
           </p>
           <Link
             to="donations"

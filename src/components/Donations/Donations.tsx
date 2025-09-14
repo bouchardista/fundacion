@@ -16,7 +16,7 @@ const bankInfo: BankInfo[] = [
   },
   {
     label: 'Alias',
-    value: 'FUNDACION.LIBERTAD',
+    value: 'CORDOBA.AVANZA',
     type: 'alias'
   },
   {
@@ -26,7 +26,7 @@ const bankInfo: BankInfo[] = [
   },
   {
     label: 'Nombre',
-    value: 'Fundación La Libertad Avanza Córdoba',
+    value: 'Fundación Córdoba Avanza',
     type: 'name'
   }
 ];
@@ -49,7 +49,7 @@ const Donations: React.FC = () => {
         <div className="donations__header">
           <h2 className="donations__title">Hacer una Donación</h2>
           <p className="donations__subtitle">
-            Tu apoyo nos permite continuar transformando vidas. Cada donación hace la diferencia.
+            Tu apoyo nos permite continuar transformando vidas.<br />Cada donación hace la diferencia.
           </p>
         </div>
         
