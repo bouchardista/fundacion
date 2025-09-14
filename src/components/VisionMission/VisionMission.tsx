@@ -10,13 +10,13 @@ const VisionMission: React.FC = () => {
           <div className="vision-mission__card">
             <div className="vision-mission__icon">🎯</div>
             <h3>Nuestra Misión</h3>
-            <p>Promover los valores de la libertad, la responsabilidad individual y el respeto por los derechos fundamentales, contribuyendo al desarrollo de una sociedad más próspera y justa en la provincia de Córdoba.</p>
+            <p>Promover los valores de la libertad, la responsabilidad individual y el respeto por los derechos fundamentales.</p>
           </div>
           
           <div className="vision-mission__card">
-            <div className="vision-mission__icon">👁️</div>
+            <div className="vision-mission__icon">🌍</div>
             <h3>Nuestra Visión</h3>
-            <p>Ser la fundación de referencia en Córdoba para la promoción del pensamiento liberal, la educación ciudadana y la construcción de políticas públicas que respeten la libertad individual y fomenten el progreso social.</p>
+            <p>Ser la fundación de referencia en Córdoba para la promoción del pensamiento liberal en la educación ciudadana.</p>
           </div>
         </div>
       </div>
